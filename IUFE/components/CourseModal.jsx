@@ -148,7 +148,7 @@ export default function CourseModal({ course, isOpen, onClose, onApply }) {
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <h4 className="font-semibold mb-2">You'll Receive:</h4>
+                      <h4 className="font-semibold mb-2">You&apos;ll Receive:</h4>
                       <ul className="space-y-1 text-sm opacity-90">
                         <li>• Industry-recognized certificate</li>
                         <li>• Lifetime access to course materials</li>

@@ -258,7 +258,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Modern Software Training</h3>
                   <p className="text-white/90 leading-relaxed">
-                    After mastering manual accounting, we teach students how to use the latest versions of various accounting software, ensuring they're industry-ready.
+                    After mastering manual accounting, we teach students how to use the latest versions of various accounting software, ensuring they&apos;re industry-ready.
                   </p>
                 </div>
               </motion.div>
@@ -486,7 +486,7 @@ export default function HomePage() {
                       <p className="text-xs text-coral-red">{testimonial.course}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 italic">"{testimonial.quote}"</p>
+                  <p className="text-gray-700 italic">&ldquo;{testimonial.quote}&rdquo;</p>
                   <div className="flex mt-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-accent-gold fill-current" />
@@ -569,7 +569,7 @@ export default function HomePage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Got questions? We've got answers. Find everything you need to know about our courses.
+                Got questions? We&apos;ve got answers. Find everything you need to know about our courses.
               </p>
             </motion.div>
 
