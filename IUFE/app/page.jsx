@@ -238,7 +238,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-bold text-matte-navy mb-4">Expert Instruction</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Students receive instruction from professionals in the disciplines of accounting and taxation. We cover all fields including well-known companies.
+                    We&apos;re not just another training institute. Students receive instruction from professionals in the disciplines of accounting and taxation. We cover all fields including well-known companies.
                   </p>
                 </div>
               </motion.div>
@@ -433,7 +433,7 @@ export default function HomePage() {
                         onClick={() => handleCourseClick(course.id)}
                         className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-matte-navy text-white rounded-full font-semibold hover:bg-deep-indigo transition-all duration-300 w-full"
                       >
-                        <span>Learn More & Enroll</span>
+                        <span>Join 5,000+ Learners & Enroll</span>
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </button>
                     </div>
@@ -623,7 +623,7 @@ export default function HomePage() {
                 Ready to Start Your Journey?
               </h2>
               <p className="text-xl opacity-90 max-w-3xl mx-auto">
-                Get in touch with our admissions team. We're here to help you choose the right course for your career goals.
+                Get in touch with our admissions team. We&apos;re here to help you choose the right course for your career goals.
               </p>
             </motion.div>
 

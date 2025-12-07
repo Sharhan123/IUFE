@@ -192,8 +192,8 @@ export default function CourseModal({ course, isOpen, onClose, onApply }) {
                 <div className="mt-6 p-4 bg-warm-gray rounded-lg">
                   <p className="text-sm text-gray-600 text-center">
                     <strong>Next Batch Starts:</strong> December 1st, 2024 |
-                    <strong> Limited Seats:</strong> Only 25 students per batch |
-                    <strong> Early Bird Discount:</strong> Save 20% if you enroll before Nov 25th
+                    <strong>Limited Seats:</strong> Only 25 students per batch |
+                    <strong>Early Bird Discount:</strong> Save 20% if you enroll before Nov 25th
                   </p>
                 </div>
               </div>
