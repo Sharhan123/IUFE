@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Sora', sans-serif;
+    line-height: 1.6;
+    color: #14264A;
+    background-color: #FEFEFF;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus {
+    outline: 2px solid #E34234;
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-coral-red text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-opacity-90 hover:shadow-glow focus:ring-4 focus:ring-coral-red focus:ring-opacity-30;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-matte-navy text-matte-navy px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-matte-navy hover:text-white focus:ring-4 focus:ring-matte-navy focus:ring-opacity-30;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-6xl mx-auto px-6 lg:px-8;
+  }
+
+  .container-fluid {
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  .container-wide {
+    @apply max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+
+  .card {
+    @apply bg-white rounded-card shadow-card border border-gray-100 transition-all duration-300 hover:shadow-card-hover;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #14264A 0%, #1F3B8A 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #14264A 0%, #1F3B8A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Infinite Marquee Animation - Left Direction */
+  .animate-marquee-left {
+    animation: marquee-left 30s linear infinite;
+  }
+
+  /* Infinite Marquee Animation - Right Direction */
+  .animate-marquee-right {
+    animation: marquee-right 30s linear infinite;
+  }
+
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+  @keyframes marquee-right {
+    0% {
+      transform: translateX(-50%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Custom Scrollbar Styles */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #E34234;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c73529;
+  }
+
+  /* Firefox scrollbar */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #E34234 #f1f1f1;
+  }
+}
